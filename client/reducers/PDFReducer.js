@@ -1,13 +1,14 @@
 import {fileUpload} from '../API/FileUpload';
 import _ from 'lodash';
-const FILE_DROP = 'PDF/FILE_DROP';
-const SUBMIT = 'PDF/SUBMIT';
-const ERROR = 'PDF/ERROR';
-const VATS_RECEIVED = 'PDF/VATS_RECEIVED';
-const VAT_CHANGE = 'PDF/VAT_CHANGE';
+
+export const FILE_DROP = 'PDF/FILE_DROP';
+export const SUBMIT = 'PDF/SUBMIT';
+export const ERROR = 'PDF/ERROR';
+export const VATS_RECEIVED = 'PDF/VATS_RECEIVED';
+export const VAT_CHANGE = 'PDF/VAT_CHANGE';
 
 
-const fileDropUnit = (file) => {
+export const fileDropUnit = (file) => {
     return {
         type: FILE_DROP,
         file: file
@@ -48,12 +49,13 @@ export const changeVAT = (value) => {
     }
 }
 
-const defaultState = {
+export const defaultState = {
     fieldtext: '',
     file: null,
     VATs: null,
     loading: false
 }
+
 export default (state = defaultState, action) => {
   // TODO
   let cState = _.cloneDeep(state);
