@@ -1,0 +1,36 @@
+.container {
+    width: 400px;
+    margin: auto;
+    margin-top: 50px;
+}
+
+.field {
+    height: 45px;
+    border: 2px solid #dbe8ec;
+    border-radius: 3px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    font-size: 15px;
+    width: 100%;
+}
+
+.dropzone {
+    width: 411px;
+    height: 200px;
+    border: 1px dashed #dbe8ec;
+}
+
+.dropzoneLabel {
+    font-size: 11px;
+    text-align: center;
+    color: grey;
+}
+
+.filename {
+    font-size: 11px;
+    text-align: center;
+    margin-top: 65px;
+}
+
+.vat {
+}

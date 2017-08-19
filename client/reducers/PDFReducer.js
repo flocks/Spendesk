@@ -60,6 +60,7 @@ export default (state = defaultState, action) => {
   switch(action.type) {
       case FILE_DROP: 
          cState.file = action.file;
+         cState.VATs = null;
          cState.loading = true;
          return cState;
       case VAT_CHANGE: 
